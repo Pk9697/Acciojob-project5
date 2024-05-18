@@ -61,6 +61,11 @@ a {
 	font-weight: 700;
 }
 
+.avatar{
+    border-radius: 100%;
+    border: 1px solid #00000019;
+}
+
 .container-flex{
     display: flex;
     flex-direction: column;
@@ -76,6 +81,7 @@ a {
 @media screen and (min-width: 768px) {
     .container-flex{
         flex-direction: row;
+        gap: 0;
     }
 	.container-grid {
 		grid-template-columns: 2fr 1fr;
@@ -125,4 +131,36 @@ a {
 	.sidebar {
 		display: block;
 	}
+}
+
+/* MAIN-SECTION */
+
+main{
+    padding: 1em 0;
+    background-color: var(--color-light);
+}
+
+/* STORY */
+.story-container{
+    display: flex;
+    gap: 1em;
+    overflow-x: scroll;
+    max-width: 500px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.story-container::-webkit-scrollbar{
+    display: none;
+}
+
+.story{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3em;
+}
+
+.story__text{
+    font-size: 0.7rem;
 }
